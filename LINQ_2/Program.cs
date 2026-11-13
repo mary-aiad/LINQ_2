@@ -197,6 +197,17 @@ namespace LINQ_2
             //var result = ProductList.FirstOrDefault(p => p.UnitPrice > 500);
             //Console.WriteLine(result);
             #endregion
+
+            #region Question_18
+            ///18. Generate a multiplication table row for 7
+            //var result = Enumerable.Range(1, 12)
+            //                        .Select(n => $"7 *  {n} = { 7 * n}");
+
+            //foreach (var number in result)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            #endregion
         }
     }
 }
