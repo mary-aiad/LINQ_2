@@ -1,4 +1,5 @@
 ﻿using LINQ.Models;
+using System.Diagnostics.Metrics;
 using static LINQ.DataSources.Source;
 
 namespace LINQ_2
@@ -102,6 +103,27 @@ namespace LINQ_2
             //foreach (var group in result)
             //{
             //    Console.WriteLine($"{group}");
+            //}
+            #endregion
+
+            #region Question_09
+            ///9. Using QUERY SYNTAX, group customers by Country, and for each group select { Country, Count, TotalOrderValue }.
+            //var result = from c in CustomerList
+            //             group c by c.Country into Group
+            //             select new
+            //             {
+            //                Country = Group.Key,
+            //                Count = Group.Count(),
+            //                TotalOrderValue = Group.SelectMany(c => c.Orders).Sum(o=>o.Total)
+
+
+            //             };
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(
+            //        $"{item.Country} - {item.Count} - {item.TotalOrderValue}"
+            //    );
             //}
             #endregion
         }
