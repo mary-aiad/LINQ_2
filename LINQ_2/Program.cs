@@ -72,25 +72,37 @@ namespace LINQ_2
 
             #region Question_07
             ///7. Group products by Category and project only product names per group
-            var result = ProductList.GroupBy(p => p.Category)
-                                    .Select(g=> new
-                                    {
-                                        Category = g.Key,
-                                        ProductNames = g.Select(p=> p.ProductName)
-                                    });
+            //var result = ProductList.GroupBy(p => p.Category)
+            //                        .Select(g=> new
+            //                        {
+            //                            Category = g.Key,
+            //                            ProductNames = g.Select(p=> p.ProductName)
+            //                        });
 
-            foreach (var group in result)
-                {
-                Console.WriteLine("---------------------------------------------");
-                    Console.Write(group.Category+": ");
+            //foreach (var group in result)
+            //    {
+            //    Console.WriteLine("---------------------------------------------");
+            //        Console.Write(group.Category+": ");
 
-                    foreach (var name in group.ProductNames)
-                    {
-                        Console.WriteLine(name);
-                    }
-                }
-            
+            //        foreach (var name in group.ProductNames)
+            //        {
+            //            Console.WriteLine(name);
+            //        }
+            //    }
 
+
+            #endregion
+
+            #region Question_08
+            ///8. Find all categories that have MORE THAN 3 products
+            //var result = ProductList.GroupBy(p => p.Category)
+            //                        .Where(p => p.Count() > 3)
+            //                        .Select(p => p.Key);
+
+            //foreach (var group in result)
+            //{
+            //    Console.WriteLine($"{group}");
+            //}
             #endregion
         }
     }
