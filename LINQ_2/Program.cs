@@ -1,5 +1,6 @@
 ﻿using LINQ.Models;
 using System.Diagnostics.Metrics;
+using System.Drawing;
 using static LINQ.DataSources.Source;
 
 namespace LINQ_2
@@ -177,6 +178,12 @@ namespace LINQ_2
             //{
             //    Console.WriteLine(country);
             //}
+            #endregion
+
+            #region Question_15
+            ///15. Build a Dictionary<int, Product> keyed by ProductID. Then retrieve and print the product with ID = 18.
+            //var productsDictionary = ProductList.ToDictionary(p => p.ProductID);
+            //Console.WriteLine(productsDictionary.ContainsKey(18)? productsDictionary[18].ProductName : "Not Exist" );
             #endregion
         }
     }
