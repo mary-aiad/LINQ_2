@@ -69,6 +69,29 @@ namespace LINQ_2
             //    Console.WriteLine($"{group.Key} - { group.Count()}");
             //}
             #endregion
+
+            #region Question_07
+            ///7. Group products by Category and project only product names per group
+            var result = ProductList.GroupBy(p => p.Category)
+                                    .Select(g=> new
+                                    {
+                                        Category = g.Key,
+                                        ProductNames = g.Select(p=> p.ProductName)
+                                    });
+
+            foreach (var group in result)
+                {
+                Console.WriteLine("---------------------------------------------");
+                    Console.Write(group.Category+": ");
+
+                    foreach (var name in group.ProductNames)
+                    {
+                        Console.WriteLine(name);
+                    }
+                }
+            
+
+            #endregion
         }
     }
 }
