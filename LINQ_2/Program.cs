@@ -15,6 +15,21 @@ namespace LINQ_2
             //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
             //}
             #endregion
+
+            #region Question_02
+            ///2. show page 2 of products, with page size = 5
+            //int pageSize = 5;
+            //int pageNumber = 2;
+
+            //var result = ProductList
+            //    .Skip((pageNumber - 1) * pageSize)
+            //    .Take(pageSize);
+
+            //foreach (var p in result)
+            //{
+            //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
+            //}
+            #endregion
         }
     }
 }
