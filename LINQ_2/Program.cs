@@ -30,6 +30,17 @@ namespace LINQ_2
             //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
             //}
             #endregion
+
+            #region Question_03
+            ///3. Take products from the list as long as Their UnitPrice is less than $25 (list is ordered by price).
+            //var result = ProductList.OrderBy(p => p.UnitPrice)
+            //                        .TakeWhile(p => p.UnitPrice < 25);
+
+            //foreach (var p in result)
+            //{
+            //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
+            //}
+            #endregion
         }
     }
 }
