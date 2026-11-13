@@ -41,6 +41,16 @@ namespace LINQ_2
             //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
             //}
             #endregion
+
+            #region Question_04
+            ///4. Check if ALL products in the "Seafood" category are in stock
+            //bool result = ProductList.Where(p => p.Category == "Seafood")
+            //                        .All(p => p.UnitsInStock > 0);
+
+
+            //Console.WriteLine(result);
+            #endregion
+
         }
     }
 }
