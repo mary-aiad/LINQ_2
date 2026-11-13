@@ -134,6 +134,14 @@ namespace LINQ_2
             //Console.WriteLine("Total Number of Units in Stock: "+ result);
 
             #endregion
+
+            #region Question_11
+            ///11. Find the CHEAPEST and MOST EXPENSIVE product prices
+            //var max = ProductList.Max(p => p.UnitPrice);
+            //var min = ProductList.Min(p => p.UnitPrice);
+
+            //Console.WriteLine("Max: "+ max + " Min: "+ min);
+            #endregion
         }
     }
 }
