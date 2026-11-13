@@ -142,6 +142,19 @@ namespace LINQ_2
 
             //Console.WriteLine("Max: "+ max + " Min: "+ min);
             #endregion
+
+            #region Question_12
+            ///12. Get a distinct list of all product categories
+            //var result = ProductList.Select(p=>p.Category)
+            //                        .Distinct();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(
+            //        $"{item}"
+            //    );
+            //}
+            #endregion
         }
     }
 }
