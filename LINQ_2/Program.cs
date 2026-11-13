@@ -1,4 +1,5 @@
-﻿using static LINQ.DataSources.Source;
+﻿using LINQ.Models;
+using static LINQ.DataSources.Source;
 
 namespace LINQ_2
 {
@@ -57,6 +58,16 @@ namespace LINQ_2
             //bool check = ids.Contains(9);
 
             //Console.WriteLine(check);
+            #endregion
+
+            #region Question_06
+            ///6. Group all products by Category and print each group with its product count.
+            //var result = ProductList.GroupBy(g => g.Category);
+
+            //foreach (var group in result)
+            //{
+            //    Console.WriteLine($"{group.Key} - { group.Count()}");
+            //}
             #endregion
         }
     }
