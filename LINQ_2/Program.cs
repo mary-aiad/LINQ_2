@@ -185,6 +185,12 @@ namespace LINQ_2
             //var productsDictionary = ProductList.ToDictionary(p => p.ProductID);
             //Console.WriteLine(productsDictionary.ContainsKey(18)? productsDictionary[18].ProductName : "Not Exist" );
             #endregion
+
+            #region Question_16
+            ///16. Get the first product whose price is greater than $50.
+            //var result = ProductList.First(p => p.UnitPrice > 50);
+            //Console.WriteLine(result);
+            #endregion
         }
     }
 }
